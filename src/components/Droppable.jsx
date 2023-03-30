@@ -13,7 +13,7 @@ export function Droppable(props) {
 
   return (
     <div
-      className="container px-10 py-40 bg-slate-400"
+      className="container px-10 py-40 bg-slate-200"
       ref={setNodeRef}
       style={style}
     >

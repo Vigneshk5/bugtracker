@@ -11,25 +11,32 @@ import DONE from "../assets/done.svg";
 
 export default function DndFold() {
   const [parent, setParent] = useState(null);
-  const draggable = <Draggable id="draggable">Task</Draggable>;
+  const draggable = (
+    <Draggable className="px-10 py-10  " id="draggable">
+      Task
+    </Draggable>
+  );
   return (
     <div className="rounded-sm">
       <DndContext onDragEnd={handleDragEnd}>
-        {!parent ? draggable : null}
+        <div className="container px-10  py-10 bg-slate-300 mx-auto ">
+          <p className="text-center text-2xl tracking-wide ">Issues</p>
+          {!parent ? draggable : null}
+        </div>
         <div className=" flex flex-row ">
-          <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-400">
+          <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-200">
             <img className=" px-1" src={BACKLOG} alt="BACKLOG" />
             BACKLOG
           </div>
-          <div className="container flex flex-row px-10 py-10 bg-slate-400">
+          <div className="container flex flex-row px-10 py-10 bg-slate-200">
             <img className=" px-3" src={DEVELOPMENT} alt="DEVELOPMENT" />
             SELECTED FOR DEVELOPMENT
           </div>
-          <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-400">
+          <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-200">
             <img className="px-3" src={PROGRESS} alt="PROGRESS" />
             IN PROGRESS
           </div>
-          <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-400">
+          <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-200">
             <img className="px-3" src={DONE} alt="DONE" />
             DONE
           </div>
