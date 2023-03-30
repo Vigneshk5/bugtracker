@@ -13,7 +13,7 @@ export default function DndFold() {
   const [parent, setParent] = useState(null);
   const draggable = (
     <Draggable className="px-10 py-10  " id="draggable">
-      Task
+      automatic dark/light mode switch
     </Draggable>
   );
   return (

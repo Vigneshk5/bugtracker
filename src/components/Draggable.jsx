@@ -15,7 +15,7 @@ export function Draggable(props) {
 
   return (
     <button
-      className="container mx-auto px-10 py-10 bg-red-400 cursor-move "
+      className="container mx-auto px-10 py-10 bg-blue-400 cursor-move "
       ref={setNodeRef}
       style={style}
       {...listeners}
