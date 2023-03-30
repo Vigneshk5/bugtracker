@@ -8,12 +8,24 @@ const Footer = () => {
         <span className="text-sm sm:text-center ">
           made with 🔥 by Vignesh k
         </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
-          <li>
-            <div className="mr-4 hover:underline md:mr-6 ">About</div>
+        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <li className="text-gray-600 hover:text-blue-600">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Vigneshk5/bugtracker"
+            >
+              source code
+            </a>
           </li>
-          <li>
-            <div className="hover:underline">Contact</div>
+          <li className="text-gray-600 hover:text-blue-600">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Vigneshk5"
+            >
+              profile
+            </a>
           </li>
         </ul>
       </div>

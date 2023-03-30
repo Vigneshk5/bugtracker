@@ -13,6 +13,11 @@ export default function DndFold() {
   const [parent, setParent] = useState(null);
   const draggable = (
     <Draggable className="px-10 py-10  " id="draggable">
+      #1: automatic dark/light mode switch
+    </Draggable>
+  );
+  const draggable2 = (
+    <Draggable className="px-10 py-10  " id="draggable2">
       automatic dark/light mode switch
     </Draggable>
   );
@@ -23,6 +28,7 @@ export default function DndFold() {
           <p className="text-center text-2xl tracking-wide ">Issues</p>
           {!parent ? draggable : null}
         </div>
+
         <div className=" flex flex-row ">
           <div className="container flex flex-row mx-auto px-10 py-10 bg-slate-200">
             <img className=" px-1" src={BACKLOG} alt="BACKLOG" />
@@ -43,12 +49,13 @@ export default function DndFold() {
         </div>
         <div className=" flex flex-row ">
           <Droppable id="droppable1">
-            {parent === "droppable1" && draggable ? draggable : "empty"}
+            {parent === "droppable1" ? draggable : "empty"}
           </Droppable>
           <Droppable id="droppable2">
             {parent === "droppable2" ? draggable : "empty"}
           </Droppable>
           <Droppable id="droppable3">
+            {}
             {parent === "droppable3" ? draggable : "empty"}
           </Droppable>
           <Droppable id="droppable4">

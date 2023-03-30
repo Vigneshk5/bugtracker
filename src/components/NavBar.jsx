@@ -58,10 +58,24 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-600">Home</li>
-              <li className="text-gray-600 hover:text-blue-600">Blog</li>
-              <li className="text-gray-600 hover:text-blue-600">About US</li>
-              <li className="text-gray-600 hover:text-blue-600">Contact US</li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Vigneshk5/bugtracker/blob/main/README.md"
+                >
+                  About
+                </a>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Vigneshk5"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
