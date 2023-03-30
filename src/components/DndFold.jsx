@@ -49,17 +49,17 @@ export default function DndFold() {
         </div>
         <div className=" flex flex-row ">
           <Droppable id="droppable1">
-            {parent === "droppable1" ? draggable : "empty"}
+            {parent === "droppable1" ? draggable : "drop here!"}
           </Droppable>
           <Droppable id="droppable2">
-            {parent === "droppable2" ? draggable : "empty"}
+            {parent === "droppable2" ? draggable : "drop here!"}
           </Droppable>
           <Droppable id="droppable3">
             {}
-            {parent === "droppable3" ? draggable : "empty"}
+            {parent === "droppable3" ? draggable : "drop here!"}
           </Droppable>
           <Droppable id="droppable4">
-            {parent === "droppable4" ? draggable : "empty"}
+            {parent === "droppable4" ? draggable : "drop here!"}
           </Droppable>
         </div>
       </DndContext>
