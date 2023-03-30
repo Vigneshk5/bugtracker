@@ -17,7 +17,7 @@ export function Draggable(props) {
     <button
       className="container mx-auto px-10 py-10 bg-slate-500"
       ref={setNodeRef}
-      style={style}
+      transform={style}
       {...listeners}
       {...attributes}
     >
